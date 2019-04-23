@@ -9,11 +9,13 @@ html {
 }
 .container-fluid {
     padding: 0 !important;
+    &:first-child {
+        background-color: black;
+    }
 
 }
 .navbar {
     border-radius: 0;
-    background-color: black;
     .navbar-brand {
         text-transform: uppercase;
         font-family: $headerFont;
