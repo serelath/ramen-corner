@@ -1,0 +1,32 @@
+* {
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  -ms-box-sizing: border-box !important;
+  box-sizing: border-box !important; }
+
+html {
+  font-size: 16px; }
+
+.container-fluid {
+  padding: 0 !important; }
+
+.navbar {
+  border-radius: 0;
+  background-color: black; }
+  .navbar .navbar-brand {
+    text-transform: uppercase;
+    font-family: "Permanent Marker", sans-serif;
+    font-size: 2rem;
+    color: white;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .navbar .navbar-brand:hover {
+      color: #EC4527; }
+  .navbar ul li a {
+    color: white;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .navbar ul li a:hover {
+      background-color: black !important; }
