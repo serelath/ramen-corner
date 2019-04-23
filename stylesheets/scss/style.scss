@@ -31,6 +31,7 @@ html {
                 transition: 0.3s;
                 &:hover {
                     background-color: black !important;
+                    color: $red;
                 }
             }
         }
