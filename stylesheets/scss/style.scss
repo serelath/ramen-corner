@@ -56,18 +56,17 @@ a {
     text-decoration: none !important;
     color: $red;
 }
-button {
+.button {
+    color: $red !important;
     font-family: $headerFont;
     position: relative;
     font-size: 1.2rem;
     border: 2px solid $red;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1rem !important;
     background-color: transparent;
     &:hover {
         border: 2px solid white;
-        a {
-            color: white !important;
-        }
+        color: white !important;
     }
 }
 
@@ -117,7 +116,7 @@ button {
         padding-top: 160px !important;
     }
     @include mQ($xxs) {
-        padding-top: 125px !important;
+        padding-top: 130px !important;
     }
     img {
         user-select: none;

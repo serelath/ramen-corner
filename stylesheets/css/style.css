@@ -51,17 +51,17 @@ a {
   text-decoration: none !important;
   color: #EC4527; }
 
-button {
+.button {
+  color: #EC4527 !important;
   font-family: "Permanent Marker", sans-serif;
   position: relative;
   font-size: 1.2rem;
   border: 2px solid #EC4527;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem !important;
   background-color: transparent; }
-  button:hover {
-    border: 2px solid white; }
-    button:hover a {
-      color: white !important; }
+  .button:hover {
+    border: 2px solid white;
+    color: white !important; }
 
 .navbar {
   border-radius: 0; }
@@ -95,7 +95,7 @@ button {
       padding-top: 160px !important; } }
   @media (max-width: 479px) {
     #landing {
-      padding-top: 125px !important; } }
+      padding-top: 130px !important; } }
   #landing img {
     -webkit-user-select: none;
     -moz-user-select: none;
