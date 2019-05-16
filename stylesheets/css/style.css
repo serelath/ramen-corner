@@ -89,7 +89,7 @@ button {
   background: center/cover url("../../images/landing/desktop-landing-bg.png");
   height: calc(100vh - 74px);
   width: 100vw;
-  padding-top: 195px !important; }
+  padding-top: 215px !important; }
   @media (max-width: 768px) {
     #landing {
       padding-top: 160px !important; } }
@@ -100,7 +100,7 @@ button {
     position: absolute;
     left: 49%;
     width: 725px;
-    top: 5px;
+    top: 25px;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%); }
