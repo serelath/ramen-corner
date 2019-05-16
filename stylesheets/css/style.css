@@ -64,39 +64,48 @@ a {
     border: 2px solid white;
     color: white !important; }
 
-.navbar {
-  border-radius: 0; }
-  .navbar .navbar-brand {
-    text-transform: uppercase;
-    font-family: "Permanent Marker", sans-serif;
-    font-size: 2rem;
-    color: white; }
-    .navbar .navbar-brand:hover {
-      color: #EC4527; }
-    @media (max-width: 479px) {
-      .navbar .navbar-brand {
-        font-size: 1.7rem; } }
-  .navbar ul li a {
-    color: white;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s; }
-    .navbar ul li a:hover {
-      background-color: black !important;
-      color: #EC4527; }
+.nav-container {
+  z-index: 100; }
+  .nav-container .navbar {
+    border-radius: 0; }
+    .nav-container .navbar .navbar-brand {
+      text-transform: uppercase;
+      font-family: "Permanent Marker", sans-serif;
+      font-size: 2rem;
+      color: white; }
+      .nav-container .navbar .navbar-brand:hover {
+        color: #EC4527; }
+      @media (max-width: 479px) {
+        .nav-container .navbar .navbar-brand {
+          font-size: 1.7rem; } }
+    .nav-container .navbar ul li a {
+      color: white;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+      .nav-container .navbar ul li a:hover {
+        background-color: black !important;
+        color: #EC4527; }
 
 #landing {
   position: relative;
   background: center/cover url("../../images/landing/desktop-landing-bg.png");
   height: calc(100vh - 74px);
+  margin-top: 74px;
   width: 100vw;
   padding-top: calc(215px + 2vh) !important; }
+  @media (max-width: 1200px) {
+    #landing {
+      height: calc(100vh - 64px);
+      margin-top: 64px; } }
   @media (max-width: 768px) {
     #landing {
       padding-top: 160px !important; } }
   @media (max-width: 479px) {
     #landing {
-      padding-top: 130px !important; } }
+      padding-top: 130px !important;
+      height: calc(100vh - 56px);
+      margin-top: 56px; } }
   #landing img {
     -webkit-user-select: none;
     -moz-user-select: none;

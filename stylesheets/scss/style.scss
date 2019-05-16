@@ -76,28 +76,31 @@ a {
 ////////////
 // NAVBAR //
 ////////////
-.navbar {
-    border-radius: 0;
-    .navbar-brand {
-        text-transform: uppercase;
-        font-family: $headerFont;
-        font-size: 2rem;
-        color: white;
-        &:hover {
-            color: $red;
+.nav-container {
+    z-index: 100;
+    .navbar {
+        border-radius: 0;
+        .navbar-brand {
+            text-transform: uppercase;
+            font-family: $headerFont;
+            font-size: 2rem;
+            color: white;
+            &:hover {
+                color: $red;
+            }
+            @include mQ($xxs) {
+                font-size: 1.7rem;
+            }
         }
-        @include mQ($xxs) {
-            font-size: 1.7rem;
-        }
-    }
-    ul {
-        li {
-            a { 
-                color: white;
-                transition: 0.3s;
-                &:hover {
-                    background-color: black !important;
-                    color: $red;
+        ul {
+            li {
+                a { 
+                    color: white;
+                    transition: 0.3s;
+                    &:hover {
+                        background-color: black !important;
+                        color: $red;
+                    }
                 }
             }
         }
@@ -111,13 +114,20 @@ a {
     position: relative;
     background: center / cover url('../../images/landing/desktop-landing-bg.png');
     height: calc(100vh - 74px);
+    margin-top: 74px;
     width: 100vw;
     padding-top: calc(215px + 2vh) !important;
+    @include mQ($md) {
+        height: calc(100vh - 64px);
+        margin-top: 64px;
+    }
     @include mQ($xs) {
         padding-top: 160px !important;
     }
     @include mQ($xxs) {
         padding-top: 130px !important;
+        height: calc(100vh - 56px);
+        margin-top: 56px;
     }
     img {
         user-select: none;
