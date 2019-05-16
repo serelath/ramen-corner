@@ -97,6 +97,10 @@ button {
     #landing {
       padding-top: 125px !important; } }
   #landing img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     position: absolute;
     left: 49%;
     width: 725px;
