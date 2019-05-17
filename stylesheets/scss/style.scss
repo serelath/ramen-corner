@@ -8,6 +8,9 @@
 }
 body, html {
     overflow-x:hidden;
+	section {
+		overflow-y:hidden;
+	}
 }
 html {
     font-size: 16px;
@@ -38,8 +41,9 @@ h1 {
         font-size: 2.9rem;
     }
     ~.header-ink {
-    width: 75px;
-}
+    	width: 75px;
+		
+	}
 }
 h2 {
     font-family: $headerFont;
@@ -116,7 +120,7 @@ a {
     height: calc(100vh - 74px);
     margin-top: 74px;
     width: 100vw;
-    padding-top: calc(215px + 2vh) !important;
+    padding-top: calc(195px + 4vh) !important;
     @include mQ($md) {
         height: calc(100vh - 64px);
         margin-top: 64px;
@@ -134,7 +138,7 @@ a {
         position: absolute;
         left: 49%;
         width: 725px;
-        top: calc(25px + 2vh);
+        top: calc(0px + 4vh);
         transform: translateX(-50%);
         @include mQ($xs) {
             top: 5px;
@@ -152,7 +156,6 @@ a {
 ///////////////
 #our-story {
     background-color: $orange;
-    overflow-y:hidden;
     #samurai {
         position: relative;
         width: 150%;
@@ -169,4 +172,16 @@ a {
             transform: translateX(0);
         }
     }
+}
+
+///////////////
+// MENU PAGE //
+///////////////
+
+
+//////////////////////
+// HOURS & LOCATION //
+//////////////////////
+#hours {
+	background-color: black;
 }

@@ -10,6 +10,8 @@
 
 body, html {
   overflow-x: hidden; }
+  body section, html section {
+    overflow-y: hidden; }
 
 html {
   font-size: 16px;
@@ -93,7 +95,7 @@ a {
   height: calc(100vh - 74px);
   margin-top: 74px;
   width: 100vw;
-  padding-top: calc(215px + 2vh) !important; }
+  padding-top: calc(195px + 4vh) !important; }
   @media (max-width: 1200px) {
     #landing {
       height: calc(100vh - 64px);
@@ -114,7 +116,7 @@ a {
     position: absolute;
     left: 49%;
     width: 725px;
-    top: calc(25px + 2vh);
+    top: calc(0px + 4vh);
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%); }
@@ -128,8 +130,7 @@ a {
         width: 590px; } }
 
 #our-story {
-  background-color: #ed9528;
-  overflow-y: hidden; }
+  background-color: #ed9528; }
   #our-story #samurai {
     position: relative;
     width: 150%;
@@ -149,3 +150,6 @@ a {
         -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
         transform: translateX(0); } }
+
+#hours {
+  background-color: black; }
